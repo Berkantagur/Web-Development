@@ -1,0 +1,27 @@
+/* Group Selectors
+
+(p) --> Tüm p etiketleri
+
+(div p) --> div içerisindeki tüm p etiketleri
+
+(div,p) --> Tüm div ve tüm p etiketleri
+
+(p + div) --> p etiketinden sonra gelen div etiketi
+
+*/
+
+.container div p{
+    color: blue;
+}
+
+div,p{
+    color: peru;
+}
+
+p + div {
+    color: blanchedalmond;
+}
+
+div + p {
+    color: darkgreen;
+}
