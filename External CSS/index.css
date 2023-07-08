@@ -1,0 +1,11 @@
+h2 {
+    color: darkviolet;
+    font-size: larger;
+    text-align: left;
+}
+
+p {
+    color: limegreen;
+    font-size: medium;
+    text-align: justify;
+}
