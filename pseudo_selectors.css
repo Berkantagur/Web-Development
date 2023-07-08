@@ -1,0 +1,46 @@
+/* Pseudo Elemet*/
+
+p::first-line{
+    font-weight: bold;
+    color: darkseagreen;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+p::first-letter{
+    font-size: 30px;
+}
+
+/*Pseudo Class*/
+
+ul li{
+    padding: 5px;
+    margin-bottom: 5px;
+    
+}
+
+ul li:first-child{
+    text-align: center;
+    background-color: lightcoral;
+}
+
+ul li:last-child{
+    background-color: darkturquoise;
+}
+
+a:visited{
+    color: sienna;
+}
+
+a:hover{
+    color: bisque;
+    background-color: lightblue;
+}
+
+a {
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+}
