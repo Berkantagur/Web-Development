@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /*kutunun çerçevesinin kapladığı yeri ihmal etme*/
+        }
+        h1 {
+            font-size: 40px;
+        }
+        .box {
+            width: 25%;
+            height: 250px;
+            background-color: lightblue;
+            float: left;
+            border: 2px solid salmon;
+        }
+        @media screen and (max-width:700px) {
+            h1 {
+                font-size: 25px;
+                color: blueviolet;
+            }
+            .box {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:400px) {
+            h1 {
+                font-size:15px;
+                color: green;
+            }
+            .box {
+                width: 100%;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
