@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /*kutunun çerçevesinin kapladığı yeri ihmal etme*/
+        }
+
+        .box {
+            width: 25%;
+            background-color: lightblue;
+            float: left;
+            border: 2px solid salmon;
+        }
+
+        @media screen and (max-width:900px) {
+            .box {
+                width: 33.3%;
+            }
+        }
+
+
+        @media screen and (max-width:600px) {
+            .box {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            .box {
+                width: 100%;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <img src="images/desktop-wallpaper-space-fantasy-set-42-space-space-fantasy-cool-space.jpg" alt="">
+    </div>
+    <div class="box">
+        <img src="images/HD-wallpaper-space-art-for-dee-planets-cool-space-dream-imagine.jpg" alt="">
+    </div>
+    <div class="box">
+        <img src="images/HD-wallpaper-space-art-for-dee-planets-cool-space-dream-imagine.jpg" alt="">
+    </div>
+    <div class="box">
+        <img src="images/desktop-wallpaper-space-fantasy-set-42-space-space-fantasy-cool-space.jpg" alt="">
+    </div>
+    <div class="box">
+        <img src="images/images.jpeg" alt="">
+    </div>
+</body>
+
+</html>
