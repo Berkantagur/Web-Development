@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: beige;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.img-fluid {
+    max-width: 256px;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 114rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(8, 232, 158);
+    color: azure;
+    padding: 2rem 0rem;
+    position: fixed;
+    z-index: 500;
+}
+
+#logo-box {
+    float: left;
+    padding-top: 0.5rem;
+}
+
+#logo-box .logo {
+    color:azure;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#nav-links {
+    float: right;
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-link {
+    color: azure;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.4s;
+}
+
+#nav-links .nav-link:hover {
+    color: darkgray;
+}
+
+header {
+    background-color: darkgray;
+    height: 70rem;
+    padding-top: calc(106px + 6rem);
+    text-align: center;
+}
+
+header h1{
+    color: floralwhite;
+    font-size: 6rem;
+}
+
+header h2 {
+    color: floralwhite;
+    font-size: 2.4rem;
+    font-family: 'EB Garamond', serif;
+}
+
+hr.star-light {
+    color: floralwhite;
+}
+hr.star-dark {
+    color: burlywood;
+}
+
+.star-light, .star-dark {
+    border: none;
+    border-top: 0.4rem solid;
+    max-width: 25rem;
+    border-radius: 1rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+.star-light::after{
+    background-color: darkgray;
+}
+.star-dark::after{
+    background-color: beige;
+}
+.star-light::after, .star-dark::after {
+    content: "\2603";
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -27px;
+    padding: 0 8px;
+}
+
+/*PORTFOLIO*/
+
+#portfolio {
+    height: 600px;
+    padding: 10rem 0rem;
+    text-align: center;
+}
+
+#portfolio h2{
+    font-size: 4.8rem;
+    color: burlywood;
+}
