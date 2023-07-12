@@ -29,6 +29,45 @@ ul {
     list-style-type: none;
 }
 
+section {
+    padding: 10rem 0rem;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid floralwhite;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-outline {
+    color: floralwhite;
+    border-color: floralwhite;
+    background-color: transparent;
+    padding: 2.2rem 1.6rem;
+}
+.btn-outline:hover {
+    background-color: floralwhite;
+    color: darkgray;
+}
+
+.btn-primary {
+    background-color: darkgray;
+    border-color: darkgray;
+    padding: 1.2rem 1rem;
+    color: floralwhite;
+}
+
+.btn-primary:hover {
+    background-color: rgb(106, 106, 106);
+    border-color: rgb(106, 106, 106);
+}
+
 .img-fluid {
     max-width: 256px;
     height: auto;
@@ -148,14 +187,84 @@ hr.star-dark {
 }
 
 /*PORTFOLIO*/
-
-#portfolio {
-    height: 600px;
-    padding: 10rem 0rem;
-    text-align: center;
-}
-
 #portfolio h2{
     font-size: 4.8rem;
     color: burlywood;
+}
+
+.img-fluid-portfolio {
+    max-width: 100%;
+    height: auto;
+}
+
+.column {
+    float: left;
+    width: 33.333%;
+    padding: 1rem;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item img {
+    display: block;
+    border-radius: 13px;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: cadetblue;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.img-overlay .icon {
+    color: floralwhite;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*+ ı ortalar*/
+}
+
+.portfolio-item:hover .img-overlay {
+    opacity: 0.8;
+    border-radius: 13px;
+}
+
+/*About*/
+#about {
+    background-color: darkgray;
+    color: floralwhite;
+}
+
+#about h2 {
+    font-size: 4.8rem;
+}
+
+#about-text {
+    text-align: justify;
+}
+
+#about-text .left{
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 23rem;
+}
+
+#about-text .right{
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 23rem;
+}
+
+#about-text .text{
+    font-size: 2rem;
 }
