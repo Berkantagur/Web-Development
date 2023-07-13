@@ -389,9 +389,16 @@ footer li {
     
     .column {
         width: 50%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        align-items: start;
+    }
+
+    .img-fluid-portfolio {
+        height: 400px;
     }
 }
-
 
 @media (min-width:992px) {
     
@@ -405,6 +412,14 @@ footer li {
 
     .column {
         width: 33.333%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        align-items: start;
+    }
+
+    .img-fluid-portfolio {
+        height: 400px;
     }
 
     #about-text .left{
@@ -432,6 +447,7 @@ footer li {
     html {
         font-size: 10px;
     }
+
 }
 
 @media (max-width: 992px) {
