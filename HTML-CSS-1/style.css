@@ -16,12 +16,7 @@ body {
     background-color: beige;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     font-family: 'Dosis', sans-serif;
 }
@@ -88,6 +83,7 @@ section {
 .img-fluid {
     max-width: 256px;
     height: auto;
+    border-radius: 50%;
 }
 
 .clearfix::after {
