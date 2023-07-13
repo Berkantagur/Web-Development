@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 6px;
 }
 
 body {
@@ -16,7 +16,12 @@ body {
     background-color: beige;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     font-family: 'Dosis', sans-serif;
 }
@@ -34,9 +39,13 @@ section {
     text-align: center;
 }
 
+.btn-large {
+    font-size: 2rem;
+    padding: 2.2rem 1.6rem;
+}
+
 .btn {
     margin-top: 2rem;
-    font-size: 2rem;
     font-weight: 400;
     display: inline-block;
     border: 2px solid floralwhite;
@@ -45,12 +54,20 @@ section {
     transition: all .5s;
 }
 
+.btn-social {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
 .btn-outline {
     color: floralwhite;
     border-color: floralwhite;
     background-color: transparent;
-    padding: 2.2rem 1.6rem;
 }
+
 .btn-outline:hover {
     background-color: floralwhite;
     color: darkgray;
@@ -80,11 +97,17 @@ section {
 }
 
 .container {
-    width: 114rem;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 1rem;
 }
 
 .text-uppercase {
@@ -109,7 +132,7 @@ nav {
 }
 
 #logo-box .logo {
-    color:azure;
+    color: azure;
     font-weight: 700;
     font-size: 3rem;
 }
@@ -137,6 +160,11 @@ nav {
     color: darkgray;
 }
 
+#nav-links .nav-icon {
+    display: none;
+}
+
+/*Header*/
 header {
     background-color: darkgray;
     height: 70rem;
@@ -144,7 +172,7 @@ header {
     text-align: center;
 }
 
-header h1{
+header h1 {
     color: floralwhite;
     font-size: 6rem;
 }
@@ -158,11 +186,13 @@ header h2 {
 hr.star-light {
     color: floralwhite;
 }
+
 hr.star-dark {
     color: burlywood;
 }
 
-.star-light, .star-dark {
+.star-light,
+.star-dark {
     border: none;
     border-top: 0.4rem solid;
     max-width: 25rem;
@@ -171,13 +201,17 @@ hr.star-dark {
     overflow: visible;
     height: 0;
 }
-.star-light::after{
+
+.star-light::after {
     background-color: darkgray;
 }
-.star-dark::after{
+
+.star-dark::after {
     background-color: beige;
 }
-.star-light::after, .star-dark::after {
+
+.star-light::after,
+.star-dark::after {
     content: "\2603";
     font-weight: 900;
     font-size: 3.2rem;
@@ -187,7 +221,7 @@ hr.star-dark {
 }
 
 /*PORTFOLIO*/
-#portfolio h2{
+#portfolio h2 {
     font-size: 4.8rem;
     color: burlywood;
 }
@@ -195,12 +229,6 @@ hr.star-dark {
 .img-fluid-portfolio {
     max-width: 100%;
     height: auto;
-}
-
-.column {
-    float: left;
-    width: 33.333%;
-    padding: 1rem;
 }
 
 .portfolio-item {
@@ -229,7 +257,8 @@ hr.star-dark {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /*+ ı ortalar*/
+    transform: translate(-50%, -50%);
+    /*+ ı ortalar*/
 }
 
 .portfolio-item:hover .img-overlay {
@@ -248,23 +277,193 @@ hr.star-dark {
 }
 
 #about-text {
-    text-align: justify;
+    text-align: left;
 }
 
-#about-text .left{
-    float: left;
-    width: 50%;
-    padding-right: 2rem;
-    padding-left: 23rem;
+#about-text .left {
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
 }
 
-#about-text .right{
-    float: right;
-    width: 50%;
-    padding-left: 2rem;
-    padding-right: 23rem;
+#about-text .right {
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 5px;
 }
 
-#about-text .text{
+#about-text .text {
     font-size: 2rem;
+}
+
+/*Contact Me*/
+
+#contact h2 {
+    font-size: 4.8rem;
+    color: burlywood;
+}
+
+#contact-form {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-groups {
+    border-bottom: 1px solid rgb(239, 214, 165);
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.form-groups input,
+.form-groups textarea {
+    border: none;
+    width: 100%;
+    background-color: beige;
+    display: block;
+    font-size: 2.4rem;
+}
+
+.form-groups input:focus,
+.form-groups textarea:focus {
+    outline: 0;
+}
+
+/*Footer*/
+
+footer {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: rgb(8, 232, 158);
+    color: floralwhite;
+    text-align: center;
+}
+
+footer h4{
+    font-size: 2.4rem;
+}
+
+footer p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.copyright {
+    background-color: rgb(31, 31, 31);
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    color: floralwhite;
+    text-align: center;
+}
+
+/*Responsive and MenuBar*/
+
+@media (min-width:576px) {
+
+    .container {
+        max-width: 540px;
+    }
+
+    html {
+        font-size: 7px;
+    }
+    
+}
+
+@media (min-width:768px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+    html {
+        font-size: 8px;
+    }
+    
+    .column {
+        width: 50%;
+    }
+}
+
+
+@media (min-width:992px) {
+    
+    .container {
+        max-width: 960px;
+    }
+
+    html {
+        font-size: 9px;
+    }
+
+    .column {
+        width: 33.333%;
+    }
+
+    #about-text .left{
+        float: left;
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 210px;
+    }
+
+    #about-text .right{
+        float: right;
+        width: 50%;
+        padding-right: 210px;
+        padding-left: 10px;
+    }
+}
+
+
+@media (min-width:1200px) {
+
+    .container {
+        max-width: 1140px;
+    }
+    
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+ 
+    #logo-box {
+        float: none;
+        text-align: left;
+    }
+
+    #nav-links {
+        float: none;
+    }
+    
+    #nav-links .nav-link{
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    #nav-links .nav-item {
+        float: none;
+        text-align: left;
+    }
+
+    #nav-links .nav-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 6px;
+        font-size: 3rem;
+    }
+
+    #nav-links.responsive li:not(:first-child){
+        display: none;
+    }
 }

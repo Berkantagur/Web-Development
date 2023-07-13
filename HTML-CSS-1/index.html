@@ -27,8 +27,13 @@
                 <a href="/" class="logo text-uppercase">Start Bootstrap</a>
             </div>
 
-            <div id="nav-links">
+            <div id="nav-links" class="responsive">
                 <ul>
+                    <li class="nav-item text-uppercase nav-icon">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </li>
                     <li class="nav-item text-uppercase">
                         <a href="#" class="nav-link">Portfolio</a>
                     </li>
@@ -147,9 +152,7 @@
                     </div>
                 </div>
             </div>
-                <button class="btn btn-primary">
-                    <i class="fa-solid fa-download"></i> Send
-                </button>
+
         </div>
     </section>
 
@@ -170,10 +173,96 @@
             </div>
         </div>
 
-        <button class="btn btn-outline">
+        <button class="btn btn-outline btn-large">
             <i class="fa-solid fa-download"></i> Download Now!
         </button>
     </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-uppercase">Contact Me</h2>
+            <hr class="star-dark">
+
+            <form id="contact-form">
+                <div class="form-groups">
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="form-groups">
+                    <input type="text" id="email" placeholder="E-mail">
+                </div>
+                <div class="form-groups">
+                    <input type="text" id="phone" placeholder="Phone">
+                </div>
+                <div class="form-groups">
+                    <textarea id="message" rows="5" placeholder="Message"></textarea>
+                </div>
+
+                <button class="btn btn-primary">
+                    <i class="fa-solid fa-download"></i> Send
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container clearfix">
+            <div class="column">
+                <h4 class="text-uppercase">Location</h4>
+                <p>Balcalı Campus, Cukurova University, Sarıçam/ADANA, TURKIYE</p>
+            </div>
+            <div class="column">
+                <h4 class="text-uppercase">Around the web</h4>
+                <ul>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-linkedin" style="color: #0f8bff;"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-github" style="color: #000000;"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-instagram" style="color: #ff1fe1;"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-twitter" style="color: #009dff;"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-facebook" style="color: #0073ff;"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4 class="text-uppercase">About Freelancer</h4>
+                <p>Freelancer is a computer engineering student. Freelanceris a inquisitive and frenetic person to learn
+                    new things.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <small>Copyright © Your Website 2023</small>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(".nav-icon").click(function () {
+            $("#nav-links").toggleClass("responsive");
+            return false;
+        })
+    </script>
 
 </body>
 
