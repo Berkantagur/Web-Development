@@ -13,7 +13,8 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.5;
-    background-color: beige;
+    background-color: #D1B6E1;
+;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,19 +38,21 @@ section {
 .btn-large {
     font-size: 2rem;
     padding: 2.2rem 1.6rem;
+    border-color: #fffff5;
 }
 
 .btn {
     margin-top: 2rem;
     font-weight: 400;
     display: inline-block;
-    border: 2px solid floralwhite;
+    border: 2px solid #fffff5;
     border-radius: 0.8rem;
     cursor: pointer;
     transition: all .5s;
 }
 
 .btn-social {
+    border-color: #285943;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -58,26 +61,24 @@ section {
 }
 
 .btn-outline {
-    color: floralwhite;
-    border-color: floralwhite;
+    color: #fffff5;
     background-color: transparent;
 }
 
 .btn-outline:hover {
-    background-color: floralwhite;
-    color: darkgray;
+    background-color: #fffff5;
+    color: #C5C6B6;
 }
 
 .btn-primary {
-    background-color: darkgray;
-    border-color: darkgray;
+    background-color: #ff5065;
+    border-color: #C5C6B6;
     padding: 1.2rem 1rem;
-    color: floralwhite;
+    color: #fffff5;
 }
 
 .btn-primary:hover {
-    background-color: rgb(106, 106, 106);
-    border-color: rgb(106, 106, 106);
+    background-color: #C5C6B6;
 }
 
 .img-fluid {
@@ -115,8 +116,8 @@ section {
 nav {
     width: 100%;
     font-family: 'Dosis', sans-serif;
-    background-color: rgb(8, 232, 158);
-    color: azure;
+    background-color: #77AF9C;
+    color: #fffff5;
     padding: 2rem 0rem;
     position: fixed;
     z-index: 500;
@@ -128,9 +129,9 @@ nav {
 }
 
 #logo-box .logo {
-    color: azure;
+    color: #fffff5;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 #nav-links {
@@ -143,8 +144,8 @@ nav {
 }
 
 #nav-links .nav-link {
-    color: azure;
-    font-size: 1.6rem;
+    color: #fffff5;
+    font-size: 1.7rem;
     font-weight: 700;
     display: block;
     padding: 1.6rem;
@@ -153,7 +154,7 @@ nav {
 }
 
 #nav-links .nav-link:hover {
-    color: darkgray;
+    color: #C5C6B6;
 }
 
 #nav-links .nav-icon {
@@ -162,29 +163,29 @@ nav {
 
 /*Header*/
 header {
-    background-color: darkgray;
+    background-color: #C5C6B6;
     height: 70rem;
     padding-top: calc(106px + 6rem);
     text-align: center;
 }
 
 header h1 {
-    color: floralwhite;
+    color: #fffff5;
     font-size: 6rem;
 }
 
 header h2 {
-    color: floralwhite;
+    color: #fffff5;
     font-size: 2.4rem;
     font-family: 'EB Garamond', serif;
 }
 
 hr.star-light {
-    color: floralwhite;
+    color: #fffff5;
 }
 
 hr.star-dark {
-    color: burlywood;
+    color: #ff5065;
 }
 
 .star-light,
@@ -199,11 +200,11 @@ hr.star-dark {
 }
 
 .star-light::after {
-    background-color: darkgray;
+    background-color: #C5C6B6;
 }
 
 .star-dark::after {
-    background-color: beige;
+    background-color: #D1B6E1;
 }
 
 .star-light::after,
@@ -219,7 +220,7 @@ hr.star-dark {
 /*PORTFOLIO*/
 #portfolio h2 {
     font-size: 4.8rem;
-    color: burlywood;
+    color: #ff5065;
 }
 
 .img-fluid-portfolio {
@@ -248,7 +249,7 @@ hr.star-dark {
 }
 
 .img-overlay .icon {
-    color: floralwhite;
+    color: #fffff5;
     font-size: 8rem;
     position: absolute;
     top: 50%;
@@ -264,8 +265,8 @@ hr.star-dark {
 
 /*About*/
 #about {
-    background-color: darkgray;
-    color: floralwhite;
+    background-color: #C5C6B6;
+    color: #fffff5;
 }
 
 #about h2 {
@@ -298,7 +299,7 @@ hr.star-dark {
 
 #contact h2 {
     font-size: 4.8rem;
-    color: burlywood;
+    color: #ff5065;
 }
 
 #contact-form {
@@ -308,16 +309,19 @@ hr.star-dark {
 }
 
 .form-groups {
-    border-bottom: 1px solid rgb(239, 214, 165);
+    border-bottom: 1.2px solid #c776f7;
     padding-bottom: 3rem;
     margin-bottom: 4rem;
 }
 
 .form-groups input,
 .form-groups textarea {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    color:  #747474;
     border: none;
     width: 100%;
-    background-color: beige;
+    background-color: #D1B6E1;
     display: block;
     font-size: 2.4rem;
 }
@@ -332,8 +336,8 @@ hr.star-dark {
 footer {
     padding-top: 6rem;
     padding-bottom: 6rem;
-    background-color: rgb(8, 232, 158);
-    color: floralwhite;
+    background-color: #77AF9C;
+    color: #fffff5;
     text-align: center;
 }
 
@@ -352,10 +356,10 @@ footer li {
 }
 
 .copyright {
-    background-color: rgb(31, 31, 31);
+    background-color: #285943;
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
-    color: floralwhite;
+    color: #fffff5;
     text-align: center;
 }
 
