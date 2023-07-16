@@ -21,7 +21,6 @@
         .adv {
             width: 300px;
         }
-
     </style>
 </head>
 
@@ -800,7 +799,115 @@
     <img src="Images/302693.png" alt="" class="img-fluid">
     <img src="Images/302693.png" alt="" class="adv d-block mx-auto">
 
+    <br><br><br>
 
+    <!-- FORMS -->
+    <form>
+
+        <div class="form-group m-3">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-control" placeholder="Please enter your name">
+        </div>
+
+        <div class="form-group m-3">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" class="form-control" placeholder="Please enter your surname">
+        </div>
+
+        <div class="form-group m-3">
+            <label for="email">E-mail Address:</label>
+            <input type="email" id="email" class="form-control" placeholder="Please enter your email address">
+            <small class="form-text text-danger">This field must be filled in!</small>
+        </div>
+
+        <div class="form-group m-3">
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" class="form-control">
+        </div>
+
+        <div class="form-group m-3">
+            <label for="city">Birth-place:</label>
+            <select name="text" id="city" class="form-control">
+                <option value="">Please choose your birth-place</option>
+                <option value="01">ADANA</option>
+                <option value="06">ANKARA</option>
+                <option value="07">ANTALYA</option>
+                <option value="34">ISTANBUL</option>
+                <option value="35">IZMIR</option>
+                <option value="55">SAMSUN</option>
+                <option value="68">AKSARAY</option>
+            </select>
+        </div>
+
+        <div class="form-group m-3">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="60" rows="5" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <legend>Hobbies:</legend>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Football
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Bungee-Jumping
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Volleyball
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Paragliding
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Canoeing
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Golf
+                </label>
+            </div>
+        </div>
+
+        <div class="custom-control custom-checkbox m-5">
+            <input type="checkbox" id="cb" class="custom-control-input">
+            <label for="cb" class="custom-control-label">I agree the terms.</label>
+        </div>
+
+        <div class="custom-control custom-radio m-5">
+            <input type="radio" id="rb" class="custom-control-input">
+            <label for="rb" class="custom-control-label">Yes</label>
+        </div>
+
+        <div class="input-group m-3">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text" id="ig">@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="input-group m-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="ing">https://www.</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+    </form>
 
 
 
